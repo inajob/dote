@@ -1,0 +1,82 @@
+<div id="header">
+  <a href="../dote.html"><h1>____ DotE ____(どっと・え)</h1></a>
+</div>
+<div class="tar">
+<a id="logoutbtn" href="#"><span class="pad">logout</span></a>
+</div>
+<h1 id="h1-title">100x16</h1>
+<div class="tar" id="favs"></div>
+<div class="pad">
+<input id="loginbtn" type="button" value="LOGIN" />
+<input id="savebtn" type="button" value="SAVE" />
+<input id="saveasbtn" type="button" value="SAVE AS" />
+<input id="delbtn" type="button" value="DELETE" />
+<input id="clearbtn" type="button" value="CLEAR" />
+<input id="undobtn" type="button" value="UNDO" />
+<input id="postbtn" type="button" value="TWIT" />
+<input id="post2btn" type="button" value="TWIT(B/G)" />
+</div>
+<div class="pad">
+  <span id="pen-color" class="pad border"></span>
+  <input id="blackpen" type="button" value="BLACK" />
+  <input id="graypen" type="button" value="GRAY" />
+  <input id="whitepen" type="button" value="WHITE" />
+</div>
+<div class="pad box is-new">
+DotEへようこそ！<br />
+まずはTwitterアカウントを使ってログインをしてください<br />
+そして、CLEARをクリックしてキャンバスを初期化してください<br />
+その後おもむろにドットを打って、よし！ となったらSAVE ASをクリックして名前を入力<br />
+ドット絵が保存されます。<br />
+<br />
+ちょっと描けたら一度保存することをおすすめします<br />
+
+</div>
+<div class="pad">
+  <canvas id="canv" width="1000" height="160"></canvas>
+</div>
+<div class="pad">
+  <canvas id="canv-preview2" width="300" height="48"></canvas>
+  <span>x3</span>
+</div>
+<div class="pad">
+  <canvas id="canv-preview" width="100" height="16"></canvas>
+  <span>x1</span>
+</div>
+
+<div class="pad">
+  <canvas id="canv-preview3" width="300" height="48"></canvas>
+  <span>x3 B/G</span>
+</div>
+<div class="hide">
+  <canvas id="canv-pre-twit" width="400" height="64"></canvas>
+  <canvas id="canv-twit" width="480" height="640"></canvas>
+</div>
+<div>
+  <h2>keyboard shortcuts</h2>
+  <div>ctrl + z : undo</div>
+  <div>1: black</div>
+  <div>2: gray</div>
+  <div>3: white</div>
+</div>
+
+<div>
+ for LCD definition(for Gamebuino)
+ <textarea id="lcd-code"></textarea>
+</div>
+<div>
+ for LCD definition(for Arduboy)
+ <textarea id="lcd-code2"></textarea>
+</div>
+<hr>
+<div class="tar">
+投稿されたデータはサイト訪問者が自由に利用できるものとします。<br>
+本サイトを利用しておきたいかなる問題も@ina_aniは責任を取れませんので、自己責任でご利用ください
+</div>
+<div class="w100p" id="footer">
+  <div>
+    DotBox created by <a href="http://twitter.com/ina_ani">@ina_ani</a><br />
+    <a href="http://inajob.no-ip.org:10080/intro/intro.html">my works</a>
+  </div>
+</div>
+
