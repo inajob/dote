@@ -12,13 +12,18 @@ KARUKI.base = './';
 KARUKI.files(function(list){
   for(var i = list.length - 1; i >= 0; i--){
     if(list[i].length == 0)continue;
-    $('<div>').addClass('piece').addClass('lfloat').append(
+    var elm = $('<div>').addClass('piece').addClass('lfloat').append(
       $('<a>').css('display','block').attr('href','./data/' + list[i])
         .append(
 	  $('<img>').addClass('border')
 	    .attr('src', './data/' + list[i].replace(/\.html$/, '.png')))
         .append($('<div>').text(list[i].replace(/^tw:/,'').replace(/\.html$/,'')))
-    ).appendTo($('#contents'));
+    );
+    if(list[i].indexOf("tw:") != -1){
+      elm.appendTo($('#template'));
+    }else{
+      elm.appendTo($('#contents'));
+    }
   }
 });
 
