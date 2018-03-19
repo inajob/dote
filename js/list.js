@@ -19,10 +19,10 @@ KARUKI.files(function(list){
 	    .attr('src', './data/' + list[i].replace(/\.html$/, '.png')))
         .append($('<div>').text(list[i].replace(/^tw:/,'').replace(/\.html$/,'')))
     );
-    if(list[i].indexOf("tw:") != -1){
-      elm.appendTo($('#template'));
-    }else{
+    if(list[i].indexOf("tw:") == 0){
       elm.appendTo($('#contents'));
+    }else{
+      elm.appendTo($('#template'));
     }
   }
 });
